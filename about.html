@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Gtext Holdings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header (reuse same markup as index) -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-md bg-gradient-to-br from-[#143d6b] to-[#1f6fbf] flex items-center justify-center text-white font-bold">G</div>
+        <div>
+          <h1 class="text-lg font-semibold">Gtext Holdings</h1>
+          <p class="text-xs text-gray-500">Property Management for Owners</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="index.html" class="hover:text-[#143d6b]">Home</a>
+        <a href="about.html" class="hover:text-[#143d6b]">About</a>
+        <a href="services.html" class="hover:text-[#143d6b]">Services</a>
+        <a href="contact.html" class="hover:text-[#143d6b]">Contact</a>
+      </nav>
+
+      <button id="nav-toggle-2" class="md:hidden p-2 rounded-md border border-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu-2" class="hidden md:hidden bg-white border-t border-gray-100">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-12">
+    <section class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-extrabold">About Gtext Holdings</h2>
+        <p class="mt-4 text-gray-600">Gtext Holdings provides property owners with comprehensive management services: tenant sourcing, rent optimization, preventive maintenance, financial reporting, and legal compliance. Our corporate approach blends technology with dedicated account managers to protect and grow your real estate assets.</p>
+
+        <ul class="mt-6 space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-[#143d6b]">•</span>
+            <div>
+              <h4 class="font-semibold">Transparent Reporting</h4>
+              <p class="text-sm text-gray-600">Monthly statements, maintenance logs, and straightforward fee structures.</p>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-[#143d6b]">•</span>
+            <div>
+              <h4 class="font-semibold">Professional Maintenance</h4>
+              <p class="text-sm text-gray-600">Vetted contractors and preventative schedules to preserve asset value.</p>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-[#143d6b]">•</span>
+            <div>
+              <h4 class="font-semibold">Owner-focused Service</h4>
+              <p class="text-sm text-gray-600">Your goals guide our strategy — from yield improvement to risk management.</p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <img src="https://images.unsplash.com/photo-1499914485622-a88fac53687b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=klm" alt="Team" class="w-full h-80 object-cover rounded-md">
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h3 class="text-2xl font-semibold">Our Process</h3>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h4 class="font-semibold">1. Onboarding</h4>
+          <p class="text-sm text-gray-600 mt-2">Portfolio review and customised management plan.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h4 class="font-semibold">2. Optimization</h4>
+          <p class="text-sm text-gray-600 mt-2">Market pricing, targeted marketing, and tenant screening.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h4 class="font-semibold">3. Growth</h4>
+          <p class="text-sm text-gray-600 mt-2">Ongoing asset improvements and portfolio reporting.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t mt-16">
+    <div class="container mx-auto px-6 py-8 text-sm text-gray-500">© Gtext Holdings — All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

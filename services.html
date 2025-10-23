@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services — Gtext Holdings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-md bg-gradient-to-br from-[#143d6b] to-[#1f6fbf] flex items-center justify-center text-white font-bold">G</div>
+        <div>
+          <h1 class="text-lg font-semibold">Gtext Holdings</h1>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="index.html" class="hover:text-[#143d6b]">Home</a>
+        <a href="about.html" class="hover:text-[#143d6b]">About</a>
+        <a href="services.html" class="hover:text-[#143d6b]">Services</a>
+        <a href="contact.html" class="hover:text-[#143d6b]">Contact</a>
+      </nav>
+
+      <button id="nav-toggle-3" class="md:hidden p-2 rounded-md border border-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu-3" class="hidden md:hidden bg-white border-t border-gray-100">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-extrabold">Services for Property Owners</h2>
+    <p class="mt-3 text-gray-600 max-w-2xl">Comprehensive property management services tailored for owners who want professional, measurable results.</p>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl p-6 shadow-sm">
+        <h3 class="font-semibold">Full-Service Management</h3>
+        <p class="text-sm text-gray-600 mt-2">End-to-end property operations, tenant relations and rent collection.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-sm">
+        <h3 class="font-semibold">Leasing & Marketing</h3>
+        <p class="text-sm text-gray-600 mt-2">Professional listing, photography, and targeted advertising to reduce vacancy.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-sm">
+        <h3 class="font-semibold">Maintenance & Repairs</h3>
+        <p class="text-sm text-gray-600 mt-2">Vetted contractors and preventative maintenance schedules to protect value.</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-sm">
+        <h3 class="font-semibold">Portfolio Consulting</h3>
+        <p class="text-sm text-gray-600 mt-2">Strategic advice to grow yields and prioritize capital improvements.</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-sm">
+        <h3 class="font-semibold">Financial Reporting</h3>
+        <p class="text-sm text-gray-600 mt-2">Clean accounting and monthly statements for owners and investors.</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-sm">
+        <h3 class="font-semibold">Legal & Compliance</h3>
+        <p class="text-sm text-gray-600 mt-2">Lease compliance, eviction support and regulatory guidance.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white border-t mt-16">
+    <div class="container mx-auto px-6 py-8 text-sm text-gray-500">© Gtext Holdings — All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

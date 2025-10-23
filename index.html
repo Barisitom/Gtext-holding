@@ -1,0 +1,211 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gtext Holdings — Property Management</title>
+  <meta name="description" content="Gtext Holdings — Professional property management for owners. Corporate, reliable, modern." />
+  <!-- Tailwind CDN for quick prototyping -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-md bg-gradient-to-br from-[#143d6b] to-[#1f6fbf] flex items-center justify-center text-white font-bold">G</div>
+        <div>
+          <h1 class="text-lg font-semibold">Gtext Holdings</h1>
+          <p class="text-xs text-gray-500">Property Management for Owners</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="index.html" class="hover:text-[#143d6b]">Home</a>
+        <a href="about.html" class="hover:text-[#143d6b]">About</a>
+        <a href="services.html" class="hover:text-[#143d6b]">Services</a>
+        <a href="contact.html" class="hover:text-[#143d6b]">Contact</a>
+        <a href="contact.html" class="ml-4 inline-block bg-[#FFB400] text-white px-4 py-2 rounded-md text-sm font-medium">Get Started</a>
+      </nav>
+
+      <button id="nav-toggle" class="md:hidden p-2 rounded-md border border-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-12">
+    <!-- Hero -->
+    <section class="grid lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-4xl font-extrabold leading-tight">Gtext Holdings</h2>
+        <p class="mt-4 text-gray-600 max-w-xl">Professional property management solutions crafted for property owners who demand reliability, transparency, and growth. We manage your assets — you enjoy the returns.</p>
+
+        <div class="mt-6 flex gap-4">
+          <a href="services.html" class="inline-block bg-[#143d6b] text-white px-5 py-3 rounded-md shadow-md font-medium">Our Services</a>
+          <a href="#featured" class="inline-block border border-gray-200 px-5 py-3 rounded-md text-gray-700">View Properties</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-3 gap-3 max-w-sm">
+          <div class="text-center">
+            <h3 class="text-xl font-bold">500+</h3>
+            <p class="text-xs text-gray-500">Units Managed</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-bold">98%</h3>
+            <p class="text-xs text-gray-500">Occupancy Rate</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-xl font-bold">24/7</h3>
+            <p class="text-xs text-gray-500">Support</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <img src="https://images.unsplash.com/photo-1560185008-5c09f8a2d7cf?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abc" alt="Property" class="w-full h-72 object-cover rounded-md">
+        <div class="mt-4">
+          <p class="text-sm text-gray-500">Trusted partner for property owners — streamlined operations, maximum returns.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About snippet -->
+    <section class="mt-16 bg-gradient-to-r from-white to-gray-50 rounded-xl p-8">
+      <div class="flex items-center justify-between gap-6">
+        <div>
+          <h3 class="text-2xl font-semibold">About Gtext Holdings</h3>
+          <p class="mt-2 text-gray-600 max-w-2xl">We specialize in maximizing property revenue while minimizing the operational burden for owners. Our team handles leasing, maintenance, rent collection, and financial reporting with corporate-grade tools and personalised service.</p>
+        </div>
+        <a href="about.html" class="inline-block bg-[#FFB400] text-white px-4 py-2 rounded-md">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="featured" class="mt-12">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-semibold">Featured Properties</h3>
+        <a href="services.html" class="text-sm text-gray-500">See all listings →</a>
+      </div>
+
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- card 1 -->
+        <article class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=xyz" alt="Property 1" class="w-full h-44 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Riverside Apartment — 2BR</h4>
+            <p class="text-sm text-gray-500 mt-1">Port Harcourt — Managed</p>
+            <div class="mt-3 flex items-center justify-between">
+              <div class="text-lg font-bold">₦450,000</div>
+              <a href="contact.html" class="text-sm bg-[#143d6b] text-white px-3 py-2 rounded-md">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- card 2 -->
+        <article class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=def" alt="Property 2" class="w-full h-44 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Executive Condo — 3BR</h4>
+            <p class="text-sm text-gray-500 mt-1">Lagos — Managed</p>
+            <div class="mt-3 flex items-center justify-between">
+              <div class="text-lg font-bold">₦1,250,000</div>
+              <a href="contact.html" class="text-sm bg-[#143d6b] text-white px-3 py-2 rounded-md">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- card 3 -->
+        <article class="bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=ghi" alt="Property 3" class="w-full h-44 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">Modern Office Space</h4>
+            <p class="text-sm text-gray-500 mt-1">Abuja — Managed</p>
+            <div class="mt-3 flex items-center justify-between">
+              <div class="text-lg font-bold">₦2,800,000</div>
+              <a href="contact.html" class="text-sm bg-[#143d6b] text-white px-3 py-2 rounded-md">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="mt-12 bg-[#143d6b] text-white rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h3 class="text-2xl font-semibold">Ready to optimize your property portfolio?</h3>
+        <p class="mt-2 text-gray-200">Speak with our property management specialists and get a free portfolio review.</p>
+      </div>
+      <div>
+        <a href="contact.html" class="inline-block bg-[#FFB400] text-[#143d6b] px-5 py-3 rounded-md font-semibold">Request a Review</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-16">
+    <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row items-start justify-between gap-6">
+      <div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-md bg-gradient-to-br from-[#143d6b] to-[#1f6fbf] flex items-center justify-center text-white font-bold">G</div>
+          <div>
+            <h4 class="font-semibold">Gtext Holdings</h4>
+            <p class="text-xs text-gray-500">Property Management for Owners</p>
+          </div>
+        </div>
+        <p class="mt-4 text-sm text-gray-600 max-w-xs">We manage, maintain and maximize the value of your real estate investments while you enjoy peace of mind.</p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-6">
+        <div>
+          <h5 class="font-semibold">Company</h5>
+          <ul class="mt-3 text-sm text-gray-600 space-y-2">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold">Contact</h5>
+          <p class="mt-3 text-sm text-gray-600">Phone: 080-XXX-XXXX</p>
+          <p class="text-sm text-gray-600">Email: info@gtextholdings.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t bg-gray-50 py-4 mt-6">
+      <div class="container mx-auto px-6 text-sm text-gray-500">© Gtext Holdings — All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+### Notes & Next Steps
+
+* Images use Unsplash links — replace them with your own photography for a stronger brand feel.
+* To make the contact form actually send emails, connect it to EmailJS, Formspree, or your backend API. The script includes a placeholder for integration.
+* When you're ready, I can:
+
+  * Convert this to a deployable project (Netlify/Vercel config),
+  * Add an owner dashboard skeleton (protected area), or
+  * Replace Tailwind CDN with a local build using a Tailwind config for production.
+
+Enjoy — and tell me which of the next steps you'd like me to do for you!

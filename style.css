@@ -1,0 +1,20 @@
+/* Custom tweaks on top of Tailwind */
+:root{
+  --gtext-blue: #143d6b;
+  --gtext-gold: #FFB400;
+}
+
+/* Small utility for container width used in HTML */
+.container{max-width:1100px}
+
+/* Focus ring for accessibility */
+input:focus, textarea:focus, button:focus{outline:3px solid rgba(20,61,107,0.12)}
+
+/* Footer link hover */
+footer a:hover{color:var(--gtext-blue)}
+
+/* Subtle card hover */
+article:hover{transform:translateY(-4px);transition:transform .2s ease}
+
+/* Rounded image placeholders */
+img{border-radius:8px}
